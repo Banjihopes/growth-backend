@@ -12,7 +12,7 @@ const cors = require('cors');
 
 dotenv.config();
 app.use(cors({
-    origin: "https://growthpal.onrender.com"
+    origin: "https://growthpal.netlify.app"
 }));
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")))
